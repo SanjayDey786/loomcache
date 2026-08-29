@@ -1,4 +1,4 @@
-```markdown
+
 # Loom
 
 **The smallest tool that gives any Python script content‑addressed caching, partial re‑execution, and node‑level diffing — without an orchestration platform.**
@@ -78,7 +78,6 @@ Every `@loom.step` call is hashed from:
                           (so changing `plan` invalidates every-
                            thing downstream of it automatically)
 
-```
 
 ---
 
