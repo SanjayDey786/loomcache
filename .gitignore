@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Loom's own local cache/run output (never commit these)
+.loom_cache/
+.loom_runs/
+
+.DS_Store

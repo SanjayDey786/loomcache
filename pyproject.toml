@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "loomtrace"
+version = "1.0.0"
+description = "Content-addressed, deterministic execution engine for agent AI workflows."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Sanjay Dey", email = "deysanjay30@gmail.com" }]
+keywords = [
+    "agents",
+    "llm",
+    "caching",
+    "orchestration",
+    "ai",
+    "dag",
+    "reproducibility",
+    "memoization",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-asyncio>=0.21"]
+anthropic = ["anthropic>=0.30.0"]
+s3 = ["boto3>=1.26.0"]
+redis = ["redis>=4.5.0"]
+langchain = ["langchain-core>=0.1.0"]
+web = ["flask>=2.0.0"]
+all = [
+    "boto3>=1.26.0",
+    "redis>=4.5.0",
+    "langchain-core>=0.1.0",
+    "flask>=2.0.0",
+]
+
+[project.scripts]
+loom = "loom.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/loomtrace"
+Repository = "https://github.com/YOUR_USERNAME/loomtrace"
+Issues = "https://github.com/YOUR_USERNAME/loomtrace/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["loom"]
