@@ -53,9 +53,9 @@ all = [
 loom = "loom.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/YOUR_USERNAME/loomtrace"
-Repository = "https://github.com/YOUR_USERNAME/loomtrace"
-Issues = "https://github.com/YOUR_USERNAME/loomtrace/issues"
+Homepage = "https://github.com/SanjayDey786/loomtrace"
+Repository = "https://github.com/SanjayDey786/loomtrace"
+Issues = "https://github.com/SanjayDey786/loomtrace/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["loom"]
