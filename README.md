@@ -1,11 +1,11 @@
-[![PyPI version](https://badge.fury.io/py/loomtrace.svg)](https://pypi.org/project/loomtrace/) 
+[![PyPI version](https://badge.fury.io/py/loomtrace.svg?v=2)](https://pypi.org/project/loomtrace/) 
 # Loom
 
 **The smallest tool that gives any Python script content‑addressed caching, partial re‑execution, and node‑level diffing — without an orchestration platform.**
 
 Loom treats every function call in your pipeline the way Bazel treats a build target or Git treats a commit: as a hashed, content‑addressed node in a dependency graph. Change one prompt buried deep in a pipeline, and Loom re‑runs **only** that step and everything downstream of it — not the whole pipeline.
 
-> **v1.0 is here!** Remote caches (S3/Redis), LangChain adapter, Web UI, and async support are now included.
+> **v1.0.1 is here!** Remote caches (S3/Redis), LangChain adapter, Web UI, and async support are now included.
 
 ---
 
