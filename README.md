@@ -1,4 +1,4 @@
-[![PyPI version](https://badge.fury.io/py/loomtrace.svg)](https://pypi.org/project/loomtrace/) 
+[![PyPI version](https://badge.fury.io/py/loomcache.svg)](https://pypi.org/project/loomcache/) 
 # Loom
 
 **The smallest tool that gives any Python script content‑addressed caching, partial re‑execution, and node‑level diffing — without an orchestration platform.**
