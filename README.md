@@ -81,7 +81,7 @@ Every `@loom.step` call is hashed from:
 ## Quick Start
 
 ```bash
-pip install loomtrace
+pip install loomcache
 
 ```
 
@@ -197,18 +197,18 @@ asyncio.run(main())
 ## Installation
 
 ```bash
-pip install loomtrace
+pip install loomcache
 
 ```
 
 Optional extras:
 
 ```bash
-pip install loomtrace[s3]        # S3 support
-pip install loomtrace[redis]     # Redis support
-pip install loomtrace[langchain] # LangChain adapter
-pip install loomtrace[web]       # Web UI (Flask)
-pip install loomtrace[all]       # all of the above
+pip install loomcache[s3]        # S3 support
+pip install loomcache[redis]     # Redis support
+pip install loomcache[langchain] # LangChain adapter
+pip install loomcache[web]       # Web UI (Flask)
+pip install loomcache[all]       # all of the above
 
 ```
 
