@@ -5,8 +5,6 @@
 
 Loom treats every function call in your pipeline the way Bazel treats a build target or Git treats a commit: as a hashed, content‑addressed node in a dependency graph. Change one prompt buried deep in a pipeline, and Loom re‑runs **only** that step and everything downstream of it — not the whole pipeline.
 
-> **v1.0 is here!** Remote caches (S3/Redis), LangChain adapter, Web UI, and async support are now included.
-
 ---
 
 ## Table of Contents
