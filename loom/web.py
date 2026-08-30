@@ -92,7 +92,7 @@ HTML_TEMPLATE = """
 
 def create_app(runs_dir: str = ".loom_runs") -> Flask:
     if Flask is None:
-        raise ImportError("Install Flask: pip install loomtrace[web]")
+        raise ImportError("Install Flask: pip install loomcache[web]")
 
     app = Flask(__name__)
 

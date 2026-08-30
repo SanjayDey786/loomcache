@@ -7,8 +7,8 @@ README for ideas).
 ## Setup
 
 ```bash
-git clone https://github.com/SanjayDey786/loomtrace.git
-cd loomtrace
+git clone https://github.com/SanjayDey786/loomcache.git
+cd loomcache
 pip install -e ".[dev]"
 pytest
 ```

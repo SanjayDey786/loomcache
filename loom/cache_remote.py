@@ -2,8 +2,8 @@
 
 To use, install the corresponding extra:
 
-    pip install loomtrace[s3]   # for S3
-    pip install loomtrace[redis]  # for Redis
+    pip install loomcache[s3]   # for S3
+    pip install loomcache[redis]  # for Redis
 """
 
 from __future__ import annotations
@@ -36,7 +36,7 @@ class S3Cache(Cache):
         try:
             import boto3
         except ImportError as exc:
-            raise ImportError("Install boto3: pip install loomtrace[s3]") from exc
+            raise ImportError("Install boto3: pip install loomcache[s3]") from exc
 
         self.bucket = bucket
         self.prefix = prefix.rstrip("/") + "/"
@@ -106,7 +106,7 @@ class RedisCache(Cache):
         try:
             import redis
         except ImportError as exc:
-            raise ImportError("Install redis-py: pip install loomtrace[redis]") from exc
+            raise ImportError("Install redis-py: pip install loomcache[redis]") from exc
 
         self.redis = redis.from_url(url)
         self.key_prefix = key_prefix

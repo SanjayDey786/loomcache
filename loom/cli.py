@@ -54,7 +54,7 @@ def cmd_web(args):
     try:
         from loom.web import serve
     except ImportError as exc:
-        raise SystemExit("Install loomtrace[web] to use the web UI.") from exc
+        raise SystemExit("Install loomcache[web] to use the web UI.") from exc
     serve(runs_dir=args.runs_dir, host=args.host, port=args.port)
 
 
