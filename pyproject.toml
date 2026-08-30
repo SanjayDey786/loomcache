@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "loomtrace"
+name = "loomcache"
 version = "1.0.0"
 description = "Content-addressed, deterministic execution engine for agent AI workflows."
 readme = "README.md"
@@ -53,8 +53,8 @@ all = [
 loom = "loom.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/SanjayDey786/loomtrace"
-Repository = "https://github.com/SanjayDey786/loomtrace"
+Homepage = "https://github.com/SanjayDey786/loomcache"
+Repository = "https://github.com/SanjayDey786/loomcache"
 Issues = "https://github.com/SanjayDey786/loomtrace/issues"
 
 [tool.hatch.build.targets.wheel]
